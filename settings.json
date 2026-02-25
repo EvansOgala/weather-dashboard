@@ -1,0 +1,11 @@
+{
+  "city": "Lagos",
+  "units": "metric",
+  "theme": "dark",
+  "favorites": [
+    "New York",
+    "Los Angeles",
+    "Chicago",
+    "Lagos"
+  ]
+}
