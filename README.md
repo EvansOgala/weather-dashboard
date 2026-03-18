@@ -9,21 +9,19 @@ GTK4 weather desktop app with current conditions, 5-day forecast, and saved citi
 - Saved cities list with quick reload
 - Unit switcher (imperial/metric)
 - Open-Meteo support out of the box
-- Optional OpenWeather support through API key
 
 ## Dependencies
 
 ### Runtime
 
 - Python 3.11+
-- GTK4 + PyGObject
 - Network access for weather APIs
 
 Optional:
 
-- `OPENWEATHER_API_KEY` environment variable for OpenWeather provider
+- `WEATHER_PROVIDER` can be set to `open-meteo` (default)
 
-### Install dependencies by distro
+### Linux (GTK4 + PyGObject)
 
 #### Arch Linux / Nyarch
 
@@ -44,23 +42,47 @@ sudo apt install -y python3 python3-gi gir1.2-gtk-4.0
 sudo dnf install -y python3 python3-gobject gtk4
 ```
 
+### Windows (PySide6 / Qt)
+
+```powershell
+py -m pip install --upgrade pip
+py -m pip install PySide6
+py -m pip install requests
+```
+
 ## Run from source
+
+### Linux
 
 ```bash
 cd /home/'your username'/Documents/weather-dashboard
 python3 main.py
 ```
 
-Optional provider overrides:
+### Windows
+
+```powershell
+cd C:\Users\your-username\Documents\weather-dashboard
+py main.py
+```
+
+Optional provider override:
 
 ```bash
 export WEATHER_PROVIDER=open-meteo
-# or: export WEATHER_PROVIDER=openweather
-export OPENWEATHER_API_KEY='your_api_key_if_needed'
 python3 main.py
 ```
 
-## Build AppImage
+### Windows network fallback
+
+If Python networking is blocked on Windows, enable PowerShell transport:
+
+```powershell
+$env:WEATHER_HTTP_BACKEND="powershell"
+py main.py
+```
+
+## Build AppImage (Linux)
 
 ### Build requirements
 
@@ -82,3 +104,22 @@ chmod +x build-appimage.sh
 ```
 
 The script outputs an `.AppImage` file in the project root.
+
+## Build Windows (PyInstaller)
+
+### Build requirements
+
+```powershell
+py -m pip install --upgrade pip pyinstaller
+py -m pip install PySide6
+py -m pip install requests
+```
+
+### Build command
+
+```powershell
+cd C:\Users\your-username\Documents\weather-dashboard
+build-windows.bat
+```
+
+The executable is emitted into `dist\WeatherDashboard\`.
