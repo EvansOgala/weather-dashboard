@@ -1,0 +1,161 @@
+433 INFO: PyInstaller: 6.19.0, contrib hooks: 2026.2
+435 INFO: Python: 3.14.3
+441 INFO: Platform: Linux-6.19.6-arch1-1-x86_64-with-glibc2.43
+441 INFO: Python environment: /usr
+442 INFO: wrote /home/evans/Documents/weather-dashboard/WeatherDashboard.spec
+449 INFO: Removing temporary files and cleaning cache in /home/evans/.cache/pyinstaller
+455 INFO: Module search paths (PYTHONPATH):
+['/home/evans/Documents/weather-dashboard',
+ '/usr/lib/python314.zip',
+ '/usr/lib/python3.14',
+ '/usr/lib/python3.14/lib-dynload',
+ '/home/evans/.local/lib/python3.14/site-packages',
+ '/usr/lib/python3.14/site-packages',
+ '/home/evans/Documents/weather-dashboard']
+1857 INFO: Appending 'datas' from .spec
+1859 INFO: checking Analysis
+1860 INFO: Building Analysis because Analysis-00.toc is non existent
+1861 INFO: Looking for Python shared library...
+1886 INFO: Using Python shared library: /usr/lib/libpython3.14.so.1.0
+1886 INFO: Running Analysis Analysis-00.toc
+1887 INFO: Target bytecode optimization level: 0
+1888 INFO: Initializing module dependency graph...
+1891 INFO: Initializing module graph hook caches...
+1938 INFO: Analyzing modules for base_library.zip ...
+10041 INFO: Processing standard module hook 'hook-encodings.py' from '/home/evans/.local/lib/python3.14/site-packages/PyInstaller/hooks'
+12451 INFO: Processing standard module hook 'hook-pickle.py' from '/home/evans/.local/lib/python3.14/site-packages/PyInstaller/hooks'
+17731 INFO: Processing standard module hook 'hook-difflib.py' from '/home/evans/.local/lib/python3.14/site-packages/PyInstaller/hooks'
+17873 INFO: Processing standard module hook 'hook-heapq.py' from '/home/evans/.local/lib/python3.14/site-packages/PyInstaller/hooks'
+38280 INFO: Caching module dependency graph...
+38504 INFO: Analyzing /home/evans/Documents/weather-dashboard/main.py
+38623 INFO: Processing pre-safe-import-module hook 'hook-gi.py' from '/home/evans/.local/lib/python3.14/site-packages/PyInstaller/hooks/pre_safe_import_module'
+39130 INFO: Processing standard module hook 'hook-gi.py' from '/home/evans/.local/lib/python3.14/site-packages/PyInstaller/hooks'
+39705 INFO: Processing pre-safe-import-module hook 'hook-gi.overrides.py' from '/home/evans/.local/lib/python3.14/site-packages/PyInstaller/hooks/pre_safe_import_module'
+40573 INFO: Processing pre-safe-import-module hook 'hook-gi.repository.GLib.py' from '/home/evans/.local/lib/python3.14/site-packages/PyInstaller/hooks/pre_safe_import_module'
+40575 INFO: Processing pre-safe-import-module hook 'hook-gi.repository.Gtk.py' from '/home/evans/.local/lib/python3.14/site-packages/PyInstaller/hooks/pre_safe_import_module'
+40577 INFO: Processing standard module hook 'hook-gi.repository.GLib.py' from '/home/evans/.local/lib/python3.14/site-packages/PyInstaller/hooks'
+40578 INFO: Processing standard module hook 'hook-gi.repository.Gtk.py' from '/home/evans/.local/lib/python3.14/site-packages/PyInstaller/hooks'
+40604 INFO: Analyzing hidden import 'gi.overrides.Gtk'
+41121 INFO: Processing pre-safe-import-module hook 'hook-gi.repository.GObject.py' from '/home/evans/.local/lib/python3.14/site-packages/PyInstaller/hooks/pre_safe_import_module'
+41123 INFO: Processing standard module hook 'hook-gi.repository.GObject.py' from '/home/evans/.local/lib/python3.14/site-packages/PyInstaller/hooks'
+46050 INFO: Processing standard module hook 'hook-multiprocessing.util.py' from '/home/evans/.local/lib/python3.14/site-packages/PyInstaller/hooks'
+46712 INFO: Processing standard module hook 'hook-xml.py' from '/home/evans/.local/lib/python3.14/site-packages/PyInstaller/hooks'
+48655 INFO: Processing standard module hook 'hook-sysconfig.py' from '/home/evans/.local/lib/python3.14/site-packages/PyInstaller/hooks'
+48687 INFO: Processing standard module hook 'hook-_ctypes.py' from '/home/evans/.local/lib/python3.14/site-packages/PyInstaller/hooks'
+52557 INFO: Processing pre-safe-import-module hook 'hook-gi.repository.Gio.py' from '/home/evans/.local/lib/python3.14/site-packages/PyInstaller/hooks/pre_safe_import_module'
+52560 INFO: Processing standard module hook 'hook-gi.repository.Gio.py' from '/home/evans/.local/lib/python3.14/site-packages/PyInstaller/hooks'
+55819 INFO: Processing module hooks (post-graph stage)...
+55894 INFO: Processing standard module hook 'hook-gi.repository.Gtk.py' from '/home/evans/.local/lib/python3.14/site-packages/PyInstaller/hooks'
+64729 INFO: Processing pre-safe-import-module hook 'hook-gi.repository.xlib.py' from '/home/evans/.local/lib/python3.14/site-packages/PyInstaller/hooks/pre_safe_import_module'
+64731 INFO: Processing pre-safe-import-module hook 'hook-gi.repository.Gdk.py' from '/home/evans/.local/lib/python3.14/site-packages/PyInstaller/hooks/pre_safe_import_module'
+64733 INFO: Processing pre-safe-import-module hook 'hook-gi.repository.Atk.py' from '/home/evans/.local/lib/python3.14/site-packages/PyInstaller/hooks/pre_safe_import_module'
+65575 INFO: Processing standard module hook 'hook-gi.repository.GLib.py' from '/home/evans/.local/lib/python3.14/site-packages/PyInstaller/hooks'
+68305 INFO: Processing pre-safe-import-module hook 'hook-gi.repository.GModule.py' from '/home/evans/.local/lib/python3.14/site-packages/PyInstaller/hooks/pre_safe_import_module'
+68332 INFO: Processing standard module hook 'hook-gi.repository.Gdk.py' from '/home/evans/.local/lib/python3.14/site-packages/PyInstaller/hooks'
+70461 INFO: Processing pre-safe-import-module hook 'hook-gi.repository.cairo.py' from '/home/evans/.local/lib/python3.14/site-packages/PyInstaller/hooks/pre_safe_import_module'
+70463 INFO: Processing standard module hook 'hook-gi.repository.cairo.py' from '/home/evans/.local/lib/python3.14/site-packages/PyInstaller/hooks'
+72315 INFO: Processing pre-safe-import-module hook 'hook-gi.repository.Pango.py' from '/home/evans/.local/lib/python3.14/site-packages/PyInstaller/hooks/pre_safe_import_module'
+72317 INFO: Processing pre-safe-import-module hook 'hook-gi.repository.GdkPixbuf.py' from '/home/evans/.local/lib/python3.14/site-packages/PyInstaller/hooks/pre_safe_import_module'
+72517 INFO: Processing standard module hook 'hook-gi.repository.xlib.py' from '/home/evans/.local/lib/python3.14/site-packages/PyInstaller/hooks'
+74305 INFO: Processing standard module hook 'hook-gi.repository.Atk.py' from '/home/evans/.local/lib/python3.14/site-packages/PyInstaller/hooks'
+76189 INFO: Processing standard module hook 'hook-gi.repository.Pango.py' from '/home/evans/.local/lib/python3.14/site-packages/PyInstaller/hooks'
+78231 INFO: Processing pre-safe-import-module hook 'hook-gi.repository.HarfBuzz.py' from '/home/evans/.local/lib/python3.14/site-packages/PyInstaller/hooks/pre_safe_import_module'
+78233 INFO: Processing standard module hook 'hook-gi.repository.GdkPixbuf.py' from '/home/evans/.local/lib/python3.14/site-packages/PyInstaller/hooks'
+80222 INFO: Processing standard module hook 'hook-gi.repository.GModule.py' from '/home/evans/.local/lib/python3.14/site-packages/PyInstaller/hooks'
+82193 INFO: Processing standard module hook 'hook-gi.repository.HarfBuzz.py' from '/home/evans/.local/lib/python3.14/site-packages/PyInstaller/hooks'
+84114 INFO: Processing pre-safe-import-module hook 'hook-gi.repository.freetype2.py' from '/home/evans/.local/lib/python3.14/site-packages/PyInstaller/hooks/pre_safe_import_module'
+84120 INFO: Processing standard module hook 'hook-gi.repository.freetype2.py' from '/home/evans/.local/lib/python3.14/site-packages/PyInstaller/hooks'
+86357 INFO: Performing binary vs. data reclassification (4811 entries)
+88696 INFO: Looking for ctypes DLLs
+88732 INFO: Analyzing run-time hooks ...
+88737 INFO: Including run-time hook 'pyi_rth_glib.py' from '/home/evans/.local/lib/python3.14/site-packages/PyInstaller/hooks/rthooks'
+88743 INFO: Including run-time hook 'pyi_rth_pkgutil.py' from '/home/evans/.local/lib/python3.14/site-packages/PyInstaller/hooks/rthooks'
+88753 INFO: Including run-time hook 'pyi_rth_inspect.py' from '/home/evans/.local/lib/python3.14/site-packages/PyInstaller/hooks/rthooks'
+88768 INFO: Including run-time hook 'pyi_rth_multiprocessing.py' from '/home/evans/.local/lib/python3.14/site-packages/PyInstaller/hooks/rthooks'
+88779 INFO: Including run-time hook 'pyi_rth_gio.py' from '/home/evans/.local/lib/python3.14/site-packages/PyInstaller/hooks/rthooks'
+88783 INFO: Including run-time hook 'pyi_rth_gtk.py' from '/home/evans/.local/lib/python3.14/site-packages/PyInstaller/hooks/rthooks'
+88788 INFO: Including run-time hook 'pyi_rth_gdkpixbuf.py' from '/home/evans/.local/lib/python3.14/site-packages/PyInstaller/hooks/rthooks'
+88798 INFO: Including run-time hook 'pyi_rth_gi.py' from '/home/evans/.local/lib/python3.14/site-packages/PyInstaller/hooks/rthooks'
+89367 INFO: Compiling collected GLib schema files in '/home/evans/Documents/weather-dashboard/build/WeatherDashboard/_pyi_gschema_compilation'...
+89823 INFO: Creating base_library.zip...
+89951 INFO: Looking for dynamic libraries
+93848 INFO: Warnings written to /home/evans/Documents/weather-dashboard/build/WeatherDashboard/warn-WeatherDashboard.txt
+93926 INFO: Graph cross-reference written to /home/evans/Documents/weather-dashboard/build/WeatherDashboard/xref-WeatherDashboard.html
+94354 INFO: checking PYZ
+94354 INFO: Building PYZ because PYZ-00.toc is non existent
+94355 INFO: Building PYZ (ZlibArchive) /home/evans/Documents/weather-dashboard/build/WeatherDashboard/PYZ-00.pyz
+95516 INFO: Building PYZ (ZlibArchive) /home/evans/Documents/weather-dashboard/build/WeatherDashboard/PYZ-00.pyz completed successfully.
+95577 INFO: checking PKG
+95577 INFO: Building PKG because PKG-00.toc is non existent
+95577 INFO: Building PKG (CArchive) WeatherDashboard.pkg
+95693 INFO: Building PKG (CArchive) WeatherDashboard.pkg completed successfully.
+95701 INFO: Bootloader /home/evans/.local/lib/python3.14/site-packages/PyInstaller/bootloader/Linux-64bit-intel/run
+95705 INFO: checking EXE
+95705 INFO: Building EXE because EXE-00.toc is non existent
+95706 INFO: Building EXE from EXE-00.toc
+95707 INFO: Copying bootloader EXE to /home/evans/Documents/weather-dashboard/build/WeatherDashboard/WeatherDashboard
+95712 INFO: Appending PKG archive to custom ELF section in EXE
+95798 INFO: Building EXE from EXE-00.toc completed successfully.
+96205 INFO: checking COLLECT
+96206 INFO: Building COLLECT because COLLECT-00.toc is non existent
+96206 INFO: Building COLLECT COLLECT-00.toc
+106531 INFO: Building COLLECT COLLECT-00.toc completed successfully.
+107278 INFO: Build complete! The results are available in: /home/evans/Documents/weather-dashboard/dist
+appimagetool, continuous build (git version 8c8c91f), build 295 built on 2025-12-04 17:56:36 UTC
+/home/evans/Documents/weather-dashboard/AppDir/org.evans.Weather.desktop: hint: value "Utility;Science;GTK;" for key "Categories" in group "Desktop Entry" contains more than one main category; application might appear more than once in the application menu
+Using architecture x86_64
+/home/evans/Documents/weather-dashboard/AppDir should be packaged as org.evans.Weather-x86_64.AppImage
+Deleting pre-existing .DirIcon
+Creating .DirIcon symlink based on information from desktop file
+AppStream upstream metadata found in usr/share/metainfo/org.evans.Weather.appdata.xml
+Trying to validate AppStream information with the appstreamcli tool
+In case of issues, please refer to https://github.com/ximion/appstream
+org.evans.Weather.appdata.xml
+
+org.evans.Weather.metainfo.xml
+
+✔ Validation was successful: pedantic: 2
+Trying to validate AppStream information with the appstream-util tool
+In case of issues, please refer to https://github.com/hughsie/appstream-glib
+/home/evans/Documents/weather-dashboard/AppDir/usr/share/metainfo/org.evans.Weather.appdata.xml: OK
+Generating squashfs...
+Downloading runtime file from https://github.com/AppImage/type2-runtime/releases/download/continuous/runtime-x86_64
+Downloaded runtime binary of size 944632
+Parallel mksquashfs: Using 4 processors
+Creating 4.0 filesystem on org.evans.Weather-x86_64.AppImage, block size 131072.
+[=====/                                                        ]  500/5601   8%[=========================================================\    ] 5300/5601  94%[=============================================================|] 5601/5601 100%
+
+Exportable Squashfs 4.0 filesystem, zstd compressed, data block size 131072
+	compressed data, compressed metadata, compressed fragments,
+	compressed xattrs, compressed ids
+	duplicates are removed
+Filesystem size 55086.43 Kbytes (53.80 Mbytes)
+	35.46% of uncompressed filesystem size (155355.97 Kbytes)
+Inode table size 46197 bytes (45.11 Kbytes)
+	26.76% of uncompressed inode table size (172621 bytes)
+Directory table size 55129 bytes (53.84 Kbytes)
+	34.51% of uncompressed directory table size (159756 bytes)
+Number of duplicate files found 720
+Number of inodes 5202
+Number of files 4710
+Number of fragments 273
+Number of symbolic links 80
+Number of device nodes 0
+Number of fifo nodes 0
+Number of socket nodes 0
+Number of directories 412
+Number of hard-links 0
+Number of ids (unique uids + gids) 1
+Number of uids 1
+	root (0)
+Number of gids 1
+	root (0)
+Embedding ELF...
+Marking the AppImage as executable...
+Embedding MD5 digest
+Success
+
+Please consider submitting your AppImage to AppImageHub, the crowd-sourced
+central directory of available AppImages, by opening a pull request
+at https://github.com/AppImage/appimage.github.io
+Built: org.evans.Weather-x86_64.AppImage

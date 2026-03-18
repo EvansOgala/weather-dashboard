@@ -1,0 +1,35 @@
+app-id: org.evans.Weather
+runtime: org.gnome.Platform
+runtime-version: "48"
+sdk: org.gnome.Sdk
+command: org.evans.Weather
+finish-args:
+  - --share=network
+  - --share=ipc
+  - --socket=x11
+  - --socket=wayland
+
+modules:
+  - name: python3-requests
+    buildsystem: simple
+    build-commands:
+      - pip3 install --no-index --no-deps --no-build-isolation --prefix=/app .
+    sources:
+      - type: git
+        url: https://github.com/psf/requests.git
+        tag: v2.32.3
+
+  - name: weather-dashboard
+    buildsystem: simple
+    build-commands:
+      - install -Dm755 run-weather.sh /app/bin/org.evans.Weather
+      - install -Dm644 main.py /app/share/org.evans.Weather/main.py
+      - install -Dm644 ui.py /app/share/org.evans.Weather/ui.py
+      - install -Dm644 settings.py /app/share/org.evans.Weather/settings.py
+      - install -Dm644 weather-api.py /app/share/org.evans.Weather/weather-api.py
+      - install -Dm644 org.evans.Weather.desktop /app/share/applications/org.evans.Weather.desktop
+      - install -Dm644 org.evans.Weather.metainfo.xml /app/share/metainfo/org.evans.Weather.metainfo.xml
+      - install -Dm644 org.evans.Weather.png /app/share/icons/hicolor/256x256/apps/org.evans.Weather.png
+    sources:
+      - type: dir
+        path: .

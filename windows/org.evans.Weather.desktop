@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Weather Dashboard
+Comment=Current weather and 5-day forecast
+Exec=org.evans.Weather
+Icon=org.evans.Weather
+Terminal=false
+Categories=Utility;Science;GTK;
+StartupNotify=true
