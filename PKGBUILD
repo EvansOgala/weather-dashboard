@@ -5,6 +5,7 @@ pkgdesc="GTK4 weather desktop app with current conditions, forecast, and saved c
 arch=('any')
 url="https://github.com/EvansOgala/weather-dashboard"
 license=('MIT')
+options=('!strip' '!debug')
 depends=(
   'python'
   'python-gobject'
@@ -13,6 +14,11 @@ depends=(
 makedepends=('git')
 source=("$pkgname::git+https://github.com/EvansOgala/weather-dashboard.git")
 sha256sums=('SKIP')
+
+build() {
+  cd "$srcdir/$pkgname"
+  python3 -m PyInstaller --clean --noconfirm --log-level=ERROR WeatherDashboard.spec
+}
 
 pkgver() {
   cd "$srcdir/$pkgname"
