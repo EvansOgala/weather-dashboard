@@ -3,7 +3,7 @@
 
 a = Analysis(
     ['main.py'],
-    pathex=[project_path],
+    pathex=[],
     binaries=[],
     datas=[('weather-api.py', '.')],
     hiddenimports=[

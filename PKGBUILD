@@ -1,5 +1,5 @@
 pkgname=weather-dashboard-git
-pkgver=0.r11.gb0354e2
+pkgver=0.r12.g26732bc
 pkgrel=1
 pkgdesc="GTK4 weather desktop app with current conditions, forecast, and saved cities"
 arch=('any')
