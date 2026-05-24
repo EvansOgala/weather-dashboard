@@ -1,9 +1,5 @@
+#!/usr/bin/env python
 # -*- mode: python ; coding: utf-8 -*-
-
-import os
-
-project_path = os.path.abspath(os.path.dirname(__file__))
-
 
 a = Analysis(
     ['main.py'],
