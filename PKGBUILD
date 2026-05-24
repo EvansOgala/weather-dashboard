@@ -1,5 +1,5 @@
 pkgname=weather-dashboard-git
-pkgver=0.r14.gedb7110
+pkgver=0.r15.g3c91ea6
 pkgrel=1
 pkgdesc="GTK4 weather desktop app with current conditions, forecast, and saved cities"
 arch=('any')
@@ -43,6 +43,6 @@ LAUNCHER
   install -Dm644 org.evans.Weather.metainfo.xml \
     "$pkgdir/usr/share/metainfo/org.evans.Weather.metainfo.xml"
   install -Dm644 org.evans.Weather.svg \
-    "$pkgdir/usr/share/icons/hicolor/scalable/apps/org.evans.Weather.svg"
+    "$pkgdir/usr/share/icons/hicolor/scalable/apps/org.evans.Weather.png"
   install -Dm644 LICENSE "$pkgdir/usr/share/licenses/$pkgname/LICENSE"
 }
