@@ -1,5 +1,5 @@
 pkgname=weather-dashboard-git
-pkgver=0.r19.g898ed29
+pkgver=0.r22.g93d31aa
 pkgrel=1
 pkgdesc="Qt weather desktop app with current conditions, forecast, and saved cities"
 arch=('any')
