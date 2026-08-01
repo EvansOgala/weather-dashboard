@@ -1,9 +1,8 @@
-from ui import WeatherApp
+from pyside_ui import WeatherQtApp
 
 
 def main():
-    app = WeatherApp()
-    app.run(None)
+    WeatherQtApp.run_app()
 
 
 if __name__ == "__main__":

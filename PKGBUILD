@@ -1,15 +1,13 @@
 pkgname=weather-dashboard-git
 pkgver=0.r19.g898ed29
 pkgrel=1
-pkgdesc="GTK4 weather desktop app with current conditions, forecast, and saved cities"
+pkgdesc="Qt weather desktop app with current conditions, forecast, and saved cities"
 arch=('any')
 url="https://github.com/EvansOgala/weather-dashboard"
 license=('MIT')
-options=('!strip' '!debug')
 depends=(
   'python'
-  'python-gobject'
-  'gtk4'
+  'pyside6'
 )
 makedepends=('git')
 source=("$pkgname::git+https://github.com/EvansOgala/weather-dashboard.git")
@@ -22,20 +20,21 @@ pkgver() {
     "$(git rev-parse --short HEAD)"
 }
 
-build() {
-  cd "$srcdir/$pkgname"
-  python3 -m PyInstaller --clean --noconfirm --log-level=ERROR WeatherDashboard.spec
-}
-
 package() {
   cd "$srcdir/$pkgname"
 
-  install -d "$pkgdir/usr/lib/WeatherDashboard"
-  cp -a dist/WeatherDashboard/. "$pkgdir/usr/lib/WeatherDashboard/"
+  install -d "$pkgdir/usr/lib/weather-dashboard"
+  install -Dm644 main.py "$pkgdir/usr/lib/weather-dashboard/main.py"
+  install -Dm644 pyside_ui.py "$pkgdir/usr/lib/weather-dashboard/pyside_ui.py"
+  install -Dm644 weather_api.py "$pkgdir/usr/lib/weather-dashboard/weather_api.py"
+  install -Dm644 weather-api.py "$pkgdir/usr/lib/weather-dashboard/weather-api.py"
+  install -Dm644 settings.py "$pkgdir/usr/lib/weather-dashboard/settings.py"
+  install -Dm644 windows/pyside_ui.py "$pkgdir/usr/lib/weather-dashboard/windows/pyside_ui.py"
+  install -Dm644 windows/org.evans.Weather.png "$pkgdir/usr/lib/weather-dashboard/windows/org.evans.Weather.png"
 
   install -Dm755 /dev/stdin "$pkgdir/usr/bin/weather-dashboard" <<'LAUNCHER'
 #!/bin/sh
-exec /usr/lib/WeatherDashboard/WeatherDashboard "$@"
+exec /usr/bin/python3 /usr/lib/weather-dashboard/main.py "$@"
 LAUNCHER
 
   install -Dm644 org.evans.Weather.desktop \

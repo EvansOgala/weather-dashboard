@@ -80,13 +80,13 @@ QWidget {
 }
 
 QMainWindow {
-  background: #1b1f2a;
+  background: #202427;
 }
 
 QGroupBox {
-  background: #232a36;
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 12px;
+  background: #15191b;
+  border: 1px solid #343a3d;
+  border-radius: 6px;
   margin-top: 10px;
   padding: 12px;
 }
@@ -100,38 +100,38 @@ QGroupBox::title {
 }
 
 QLineEdit, QComboBox {
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  border-radius: 10px;
+  border: 1px solid #343a3d;
+  border-radius: 5px;
   padding: 7px 10px;
-  background: #1f2430;
+  background: #111518;
   color: #e6e9f2;
 }
 
 QLineEdit:focus, QComboBox:focus {
-  border: 1px solid #6aa2ff;
+  border: 1px solid #3673db;
 }
 
 QPushButton {
-  border-radius: 18px;
+  border-radius: 5px;
   padding: 7px 16px;
-  background: #3f7bff;
+  background: #e00000;
   color: white;
   font-weight: 600;
 }
 
 QPushButton:disabled {
-  background: rgba(120, 140, 170, 0.45);
+  background: #41484d;
 }
 
 QListWidget, QTextEdit {
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  border-radius: 10px;
-  background: #1f2430;
+  border: 1px solid #343a3d;
+  border-radius: 5px;
+  background: #111518;
   color: #e6e9f2;
 }
 
 QListWidget::item:selected {
-  background: rgba(63, 123, 255, 0.25);
+  background: #3673db;
   color: #e6e9f2;
 }
 """
@@ -222,6 +222,8 @@ class WeatherWindow(QtWidgets.QMainWindow):
         self.ps_checkbox = QtWidgets.QCheckBox("Use PowerShell HTTP")
         self.ps_checkbox.stateChanged.connect(self._on_http_backend_changed)
         controls.addWidget(self.ps_checkbox)
+        if os.name != "nt":
+            self.ps_checkbox.hide()
 
         body = QtWidgets.QHBoxLayout()
         outer.addLayout(body, 1)
